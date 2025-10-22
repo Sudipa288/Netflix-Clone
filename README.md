@@ -56,4 +56,4 @@ The goal was to learn **responsive web design** and **modern CSS techniques** wh
 
 ---
 
-
+![](https://github.com/Sudipa288/Netflix-Clone/blob/339d872361427395c6b0181f21ddfd50b43e72fc/Screenshot%20(5).png)
