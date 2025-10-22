@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url(bg.jpg);
+            height: 80vh;
+        }
+
+        .box {
+            background-color: black;
+            height: 80vh;
+            opacity: 55%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            bottom: 80vh;
+        }
+
+        .button .eng {
+            padding: 10px 20px;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .button .sign {
+            padding: 10px 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .eng {
+            background-color: black;
+        }
+
+        .eng:hover {
+            background-color: rgb(63, 62, 62);
+        }
+
+        .sign {
+            background-color: red;
+        }
+
+        .sign:hover {
+            background-color: rgb(168, 5, 5);
+        }
+
+        section {
+            color: white;
+            position: relative;
+            bottom: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .enjoy {
+            font-weight: 1000;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+            font-family: "Martel Sans", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .small {
+            font-size: smaller;
+            padding: 20px;
+        }
+
+        .buttons {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .email {
+            background-color: rgb(18, 18, 18);
+            padding: 10px 30px;
+            opacity: 90%;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .email:hover {
+            background-color: rgb(48, 48, 48);
+        }
+
+        .get {
+            background-color: red;
+            padding: 10px 30px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .get:hover {
+            background-color: rgb(176, 4, 4);
+        }
+
+        .email .bb {
+            background-color: rgb(18, 18, 18);
+            padding: 10px 30px;
+            opacity: 70%;
+           
+        }
+
+        .line {
+            background-color: rgb(54, 52, 52);
+            height: 10px;
+            width: 100%;
+        }
+
+        .grid {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 100px;
+        }
+
+        .grid .text {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 615px;
+        }
+
+        .grid .text .big {
+            font: 30px sans-serif;
+            font-weight: 800;
+            padding: 0px 20px;
+        }
+
+        .grid .text .small {
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .video img {
+            position: absolute;
+        }
+
+        .yo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .str {
+            background-color: rgb(59, 58, 58);
+            height: 4px;
+            width: 100%;
+        }
+
+        .faq .big2 {
+            color: white;
+            font: 25px sans-serif;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0px;
+        }
+
+        .ques {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ans:hover {
+            background-color: rgb(84, 83, 83);
+        }
+
+        .ans {
+            color: white;
+            list-style: none;
+            background-color: rgb(46, 46, 46);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            width: 65vw;
+            margin: 3px;
+        }
+
+        .ready {
+            color: white;
+            padding: 20px;
+            font-size: 15px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .faq .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .grid2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid2 ul {
+            color: rgb(130, 129, 129);
+            font-size: 14px;
+            font-weight: lighter;
+
+        }
+
+        .grid2 ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .grid2 ul li:hover {
+            color: rgb(219, 218, 218);
+        }
+
+        .head:hover {
+            color: rgb(112, 111, 111);
+        }
+
+        footer {
+            color: rgb(112, 111, 111);
+            max-width: 60vw;
+            margin: auto;
+            padding: 60px;
+        }
+
+        footer .head {
+            padding: 34px 0;
+        }
+
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            color: white;
+        }
+
+        @media screen and (max-width:800px) {
+            .yo {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="box"></div>
+        </div>
+        <div class="line"></div>
+
+
+    </header>
+    <main>
+        <nav>
+            <div class="logo"><img src="Screenshots/logo.svg" width="140"></div>
+            <div class="button">
+                <select class="eng">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+                <button class="sign">Sign in</button>
+            </div>
+        </nav>
+        <section>
+            <div class="enjoy">Enjoy big movies, hit series and more from ₹149 </div>
+            <div class="med">Join today. cancel anytime.</div>
+            <div class="small">Ready to watch? enter your email to create or restart your membership.</div>
+            <div class="buttons">
+                <input class="email" type="text" placeholder="Email address">
+                <button class="get">Get Started ></button>
+            </div>
+        </section>
+        <div class="grid">
+            <div class="yo">
+                <div class="text">
+                    <div class="big">Enjoy on your TV</div>
+                    <div class="small">Watch on smart TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                        more.
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                        width="500" alt="">
+                    <video
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                        width="500" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="str"></div>
+            <div class="yo">
+
+                <div class="video2">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                        height="300" alt="">
+                </div>
+                <div class="text">
+                    <div class="big">Download your show to watch offline</div>
+                    <div class="small">Save your favourites easily and always have something to watch
+                    </div>
+                </div>
+            </div>
+            <div class="str"></div>
+            <div class="yo">
+                <div class="text">
+                    <div class="big">Enjoy on your TV</div>
+                    <div class="small">Stream Unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                        width="500" alt="">
+                    <video
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                        width="500" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="str"></div>
+            <div class="yo">
+
+                <div class="video2">
+                    <img src="https://occ-0-2849-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                        height="300" alt="">
+                </div>
+                <div class="text">
+                    <div class="big">Create profile for kids</div>
+                    <div class="small">Send children on adventures with their favourite characters in a space made just
+                        for them—free with
+                        your membership.
+                    </div>
+                </div>
+            </div>
+            <div class="str"></div>
+            <div class="faq">
+                <div class="big2">Frequently Asked Questions</div>
+                <div class="ques">
+                    <div class="ans">What is Netflix?<img src="Screenshots/Screenshot 2025-06-26 202016.png" width="20">
+                    </div>
+                    <div class="ans">How much dose netflix cost?<img src="Screenshots/Screenshot 2025-06-26 202016.png"
+                            width="20"></div>
+                    <div class="ans">Where can I watch?<img src="Screenshots/Screenshot 2025-06-26 202016.png"
+                            width="20"></div>
+                    <div class="ans">How do I cancel?<img src="Screenshots/Screenshot 2025-06-26 202016.png" width="20">
+                    </div>
+                    <div class="ans">What can I watch on Netflix?<img src="Screenshots/Screenshot 2025-06-26 202016.png"
+                            width="20"></div>
+                    <div class="ans">Is Netflix good for kids?<img src="Screenshots/Screenshot 2025-06-26 202016.png"
+                            width="20"></div>
+                </div>
+                <div class="ready">Ready to watch? Enter your to create or restrat your membership. </div>
+                <div class="buttons">
+                    <input class="email" type="text" placeholder="Email address">
+                    <button class="get">Get Started ></button>
+                </div>
+            </div>
+            <div class="str"></div>
+    </main>
+    <footer>
+        <div class="head">Qustions? Call 000-800-919-1694</div>
+        <div class="grid2">
+            <ul>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+            </ul>
+            <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>cookie Preferences</li>
+                <li>Legal notices</li>
+            </ul>
+            <ul>
+                <li>Accout</li>
+                <li>Ways to Watch</li>
+                <li>Corporate informations</li>
+                <li>Only on Netflix</li>
+            </ul>
+            <ul>
+                <li>Media</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
